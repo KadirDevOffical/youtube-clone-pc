@@ -1,0 +1,245 @@
+:root {
+    --bg-color: whitesmoke;
+    --sec-color: white;
+    --thr-color: #EBEAEA;
+    --text-color: black;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.navbar {
+     display: flex;
+     background-color: var(--sec-color);
+     position: fixed;
+     top: 0%;
+     width: 100%;
+     padding: 30px;
+     border-bottom: solid 1px black; 
+     z-index: 1000;
+}
+
+.logo-content {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 20px;
+}
+
+.search-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 12px; 
+    color: var(--text-color);
+}
+.search-container input {
+    border: none;
+    background-color: var(--bg-color); 
+    padding: 4px;
+}
+
+.search-container .search-btn {
+    border: none;
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+
+.profile-content {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.profile-content span {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.navbar-modal {
+    background-color: var(--sec-color);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 6%;
+    right: 0;
+    padding: 25px;
+    visibility: hidden;
+}
+
+.navbar-modal a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 3px 0;
+}
+
+.navbar-modal .modal-bottom {
+    position: absolute;
+    bottom: 2%;
+    margin-bottom: 5%;
+}
+
+.chng-thm {
+    cursor: pointer;
+}
+
+.modal-bottom a {
+    margin: 0 60px 0 0;
+}
+
+.left-nav-btn {
+    position: absolute;
+    right: 2%;
+    top: 5px;
+    cursor: pointer;
+ }
+
+.left-bar {
+  position: fixed;
+  left: 0%;
+  top: 60px;
+  background-color: var(--sec-color);
+  height: 100%;
+  width: 170px;
+  border-top: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.left-bar h1 {
+    margin: 10px;
+}
+
+.category {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.channels-info {
+    opacity: 0.5;
+}
+
+.bottom-infos {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text-color); 
+    margin-top: 5px;
+}
+
+.welcome-text {
+    position: absolute;
+    left: 180px;
+    top: 8%;
+}
+
+.welcome-span {
+    position: absolute;
+    left: 180px;
+    top: 16%;
+    font-size: 25px;
+}
+
+.explore-container {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 22%;
+    background-color: var(--thr-color);
+    z-index: -1;
+}
+
+.short-container {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 54%; /* Her seferinde +32*/
+    background-color: var(--thr-color);
+    z-index: -1;
+}
+
+.popular-container {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 86%; /* Her seferinde +32*/
+    background-color: var(--thr-color);
+    z-index: -1;
+}
+
+.game-container {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 118%; /* Her seferinde +32*/
+    background-color: var(--thr-color);
+    z-index: -1;
+}
+
+.podcast-container {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 150%; /* Her seferinde +32*/
+    background-color: var(--thr-color);
+    z-index: -1;
+}
+
+.videos-title {
+    position: absolute;
+    left: 180px;
+    font-size: 20px;
+}
+
+.footer {
+   position: absolute;
+   top: 182%;
+   width: 100%;
+   height: 200px;
+   background-color: var(--thr-color);
+   text-align: center;
+   z-index: -1;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.active {
+    visibility: visible;
+}
